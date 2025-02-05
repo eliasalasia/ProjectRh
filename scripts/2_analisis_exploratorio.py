@@ -27,29 +27,31 @@ print("Generando gráficos...")
 
 # Gráfico de distribución de salarios con media y mediana
 plt.figure(figsize=(10, 6))
-sns.histplot(empleados_df['Salario'], kde=True)
-plt.axvline(empleados_df['Salario'].mean(), color='r', linestyle='--', label='Media')
-plt.axvline(empleados_df['Salario'].median(), color='g', linestyle='-', label='Mediana')
-plt.title('Distribución de Salarios')
-plt.xlabel('Salario')
-plt.ylabel('Frecuencia')
-plt.legend()
+sns.histplot(empleados_df['Salario'], kde=True, color='skyblue', edgecolor='black')
+plt.axvline(empleados_df['Salario'].mean(), color='red', linestyle='--', linewidth=2, label='Alta')
+plt.axvline(empleados_df['Salario'].median(), color='green', linestyle='-', linewidth=2, label='Media')
+plt.title('Distribución de Salarios', fontsize=16)
+plt.xlabel('Salario', fontsize=14)
+plt.ylabel('Frecuencia', fontsize=14)
+plt.legend(title='Estadísticos', fontsize=12)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.show(block=True)  # Bloquea hasta que se cierre la ventana del gráfico
 
 # Verificar si la columna 'Departamento' está presente antes de generar el gráfico
 if 'Departamento' in encuestas_df.columns:
     # Gráfico de cajas de satisfacción laboral por departamento con conteo de empleados por departamento
     plt.figure(figsize=(12, 8))
-    sns.boxplot(x='Puntaje', y='Departamento', data=encuestas_df, order=encuestas_df['Departamento'].value_counts().index)
-    plt.title('Satisfacción Laboral por Departamento')
-    plt.xlabel('Puntaje de Satisfacción')
-    plt.ylabel('Departamento')
+    sns.boxplot(x='Puntaje', y='Departamento', data=encuestas_df, order=encuestas_df['Departamento'].value_counts().index, palette='coolwarm')
+    plt.title('Satisfacción Laboral por Departamento', fontsize=16)
+    plt.xlabel('Puntaje de Satisfacción', fontsize=14)
+    plt.ylabel('Departamento', fontsize=14)
 
     # Añadir conteo de empleados por departamento
     dept_counts = encuestas_df['Departamento'].value_counts()
     for i, count in enumerate(dept_counts):
-        plt.text(encuestas_df['Puntaje'].max() + 0.1, i, f'{count} empleados', verticalalignment='center')
+        plt.text(encuestas_df['Puntaje'].max() + 0.1, i, f'{count} empleados', verticalalignment='center', fontsize=12, color='black')
 
+    plt.grid(axis='x', linestyle='--', alpha=0.7)
     plt.show(block=True)  # Bloquea hasta que se cierre la ventana del gráfico
 else:
     print("La columna 'Departamento' no está presente en encuestas_df")
@@ -57,10 +59,11 @@ else:
 # Gráfico de barras de rotación de empleados por año
 rotacion_df['AñoSalida'] = pd.to_datetime(rotacion_df['FechaSalida']).dt.year
 plt.figure(figsize=(10, 6))
-sns.countplot(x='AñoSalida', data=rotacion_df, palette='viridis')
-plt.title('Rotación de Empleados por Año')
-plt.xlabel('Año de Salida')
-plt.ylabel('Cantidad de Empleados')
+sns.countplot(x='AñoSalida', data=rotacion_df, palette='viridis', edgecolor='black')
+plt.title('Rotación de Empleados por Año', fontsize=16)
+plt.xlabel('Año de Salida', fontsize=14)
+plt.ylabel('Cantidad de Empleados', fontsize=14)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.show(block=True)  # Bloquea hasta que se cierre la ventana del gráfico
 
 print("Gráficos generados exitosamente")
