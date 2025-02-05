@@ -1,0 +1,22 @@
+ID,Nombre,Posicion,FechaContratacion,Salario,Departamento
+1,Laura Gómez,Ingeniera de Producción,2019-04-21,75000.0,Producción
+2,Carlos Martínez,Gerente de Ventas,2018-07-15,95000.0,Ventas
+3,Ana González,Especialista en Recursos Humanos,2020-02-12,60000.0,Recursos Humanos
+4,Miguel Torres,Analista Financiero,2017-11-30,70000.0,Finanzas
+5,Sofía Rodríguez,Diseñadora de Producto,2021-03-05,80000.0,Diseño
+6,Lucas Fernández,Ingeniero de Software,2018-06-15,78000.0,IT
+7,Carolina Díaz,Analista de Marketing,2019-09-25,68000.0,Marketing
+8,Pedro Ramírez,Director de Proyectos,2020-04-01,95000.0,Proyectos
+9,Martina Sánchez,Especialista en Cuentas,2017-12-10,72000.0,Finanzas
+10,Gabriel Molina,Desarrollador Web,2021-01-20,67000.0,IT
+11,Valeria Castillo,Consultora de Recursos Humanos,2022-03-30,60000.0,Recursos Humanos
+12,Ricardo López,Gerente de Operaciones,2019-05-14,89000.0,Operaciones
+13,Camila Paredes,Asistente Administrativa,2020-11-22,55000.0,Administración
+14,Lucas Fernández,Ingeniero de Software,2018-06-15,78000.0,IT
+15,Carolina Díaz,Analista de Marketing,2019-09-25,68000.0,Marketing
+16,Pedro Ramírez,Director de Proyectos,2020-04-01,95000.0,Proyectos
+17,Martina Sánchez,Especialista en Cuentas,2017-12-10,72000.0,Finanzas
+18,Gabriel Molina,Desarrollador Web,2021-01-20,67000.0,IT
+19,Valeria Castillo,Consultora de Recursos Humanos,2022-03-30,60000.0,Recursos Humanos
+20,Ricardo López,Gerente de Operaciones,2019-05-14,89000.0,Operaciones
+21,Camila Paredes,Asistente Administrativa,2020-11-22,55000.0,Administración

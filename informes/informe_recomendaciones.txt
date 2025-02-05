@@ -1,0 +1,64 @@
+**Modelo: RandomForest**
+**Precisi�n: 40.00%**
+**Reporte de clasificaci�n:**
+
+| Clase | Precisi�n (%) | Recall (%) | F1-Score | Soporte |
+|-------|----------------|------------|----------|---------|
+| 0.0   | 0.00           | 0.00       | 0.00     | 2.0 |
+| 1.0   | 50.00          | 66.67      | 0.57     | 3.0 |
+| macro avg | 25.00      | 33.33      | 0.29     | 5.0 |
+| weighted avg | 30.00   | 40.00      | 0.34     | 5.0 |
+
+**Explicaci�n simplificada:**
+- La precisi�n del modelo RandomForest es 40.00%, lo que significa que predice correctamente el 40.00% de las veces.
+- Cuando se menciona 'Precisi�n', se refiere a la exactitud del modelo al predecir la rotaci�n de empleados.
+- 'Recall' indica qu� tan bien el modelo identifica a los empleados que efectivamente rotan.
+- 'F1-Score' es una combinaci�n de la precisi�n y el recall.
+- 'Soporte' es la cantidad de empleados que pertenecen a cada categor�a (0 = no rotan, 1 = rotan).
+----------------------------------------
+**Modelo: LogisticRegression**
+**Precisi�n: 60.00%**
+**Reporte de clasificaci�n:**
+
+| Clase | Precisi�n (%) | Recall (%) | F1-Score | Soporte |
+|-------|----------------|------------|----------|---------|
+| 0.0   | 0.00           | 0.00       | 0.00     | 2.0 |
+| 1.0   | 60.00          | 100.00     | 0.75     | 3.0 |
+| macro avg | 30.00      | 50.00      | 0.38     | 5.0 |
+| weighted avg | 36.00   | 60.00      | 0.45     | 5.0 |
+
+**Explicaci�n simplificada:**
+- La precisi�n del modelo LogisticRegression es 60.00%, lo que significa que predice correctamente el 60.00% de las veces.
+- Cuando se menciona 'Precisi�n', se refiere a la exactitud del modelo al predecir la rotaci�n de empleados.
+- 'Recall' indica qu� tan bien el modelo identifica a los empleados que efectivamente rotan.
+- 'F1-Score' es una combinaci�n de la precisi�n y el recall.
+- 'Soporte' es la cantidad de empleados que pertenecen a cada categor�a (0 = no rotan, 1 = rotan).
+----------------------------------------
+**Modelo: SVM**
+**Precisi�n: 60.00%**
+**Reporte de clasificaci�n:**
+
+| Clase | Precisi�n (%) | Recall (%) | F1-Score | Soporte |
+|-------|----------------|------------|----------|---------|
+| 0.0   | 0.00           | 0.00       | 0.00     | 2.0 |
+| 1.0   | 60.00          | 100.00     | 0.75     | 3.0 |
+| macro avg | 30.00      | 50.00      | 0.38     | 5.0 |
+| weighted avg | 36.00   | 60.00      | 0.45     | 5.0 |
+
+**Explicaci�n simplificada:**
+- La precisi�n del modelo SVM es 60.00%, lo que significa que predice correctamente el 60.00% de las veces.
+- Cuando se menciona 'Precisi�n', se refiere a la exactitud del modelo al predecir la rotaci�n de empleados.
+- 'Recall' indica qu� tan bien el modelo identifica a los empleados que efectivamente rotan.
+- 'F1-Score' es una combinaci�n de la precisi�n y el recall.
+- 'Soporte' es la cantidad de empleados que pertenecen a cada categor�a (0 = no rotan, 1 = rotan).
+----------------------------------------
+
+An�lisis y Recomendaciones:
+
+An�lisis de Importancia de Caracter�sticas:
+- **Salario**: Tiene una importancia del 55.00% en la predicci�n de rotaci�n. Esto sugiere que el salario es un factor significativo en la decisi�n de los empleados de permanecer o dejar la empresa.
+- **Departamento**: Tiene una importancia del 45.00%. Esto indica que el departamento en el que trabaja un empleado tambi�n influye en la rotaci�n, aunque en menor medida que el salario.
+
+Recomendaciones:
+1. **Revisi�n de Salarios**: Considerar ajustes salariales para retener a los empleados, especialmente en departamentos con alta rotaci�n.
+2. **Mejoras en Departamentos**: Implementar programas de desarrollo y satisfacci�n laboral en departamentos con mayor rotaci�n.
